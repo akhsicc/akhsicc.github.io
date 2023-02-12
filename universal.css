@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Antonio:wght@200&display=swap');
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins";/*avenir*/
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 100vw;
+}
+
+:root {
+    --main: #3d2566;
+    --second: #b56fff;
+}
+
+body {
+    background: whitesmoke;
+    padding: 0; 
+    margin: 0;
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+	transition:all 10s;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background: gray;
+}
+
+#large {
+    position: fixed; 
+    background-color: rgb(232, 232, 232);
+    height: 115%;
+	margin-top: -400px;
+    width: 100%;
+    pointer-events: none;
+    transition: 1s;
+    z-index: 99999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#imglarge {
+	width: 100px;
+	height: 130px;
+	object-fit: cover;
+	transition: 0.5s;
+
+}
+
+#menu {
+    background: var(--main);
+	position: fixed;
+	margin-top: 0px;
+	height: 100px;
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 80px;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    top: 0;
+	left: 0;
+	z-index: 9999;
+	transition: 0.5s;
+}
+#menucontent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#github-logo {
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-bottom: -10px;
+    filter: invert();
+}
+
+#username {
+    margin-left: 40px;
+	margin-top: 5px;
+	font-size: 35px;
+	text-decoration: none;
+	color: whitesmoke;
+	transition: 0.2s;
+	display: inline-block;
+	border-bottom: 0px solid transparent;
+	border-width: 1px;
+	pointer-events: all;
+	font-weight: 700;
+    letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-right: 20px;
+}
+#menubutton {
+    font-family: "Poppins";
+	display: none;
+}
+
+#username:hover {
+    color: var(--second);
+}
+
+#menu-button {
+	background: transparent;
+    filter: invert();
+	pointer-events: all;
+}
+
+#logo {
+	position: fixed;
+	margin-left: 20px;
+	margin-top: -10px;
+	display: inline-block;
+}
+
+#first-tab {
+	margin-left: 20px;
+}
+.menu-link {
+	margin-left: 20px;
+	margin-top: 5px;
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+	transition: 0.1s;
+	display: inline-block;
+    font-weight: 600;
+	border-bottom: 1px solid transparent;
+	pointer-events: all;
+}
+
+.menu-link:hover {
+	color: var(--second);
+	border-bottom: 2px solid var(--second);
+	cursor: pointer;
+}
+
+
+#bottom {
+    height: 150px;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}

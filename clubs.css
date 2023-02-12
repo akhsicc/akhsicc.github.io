@@ -1,0 +1,117 @@
+body {
+    margin-top: 300px;
+}
+
+#titlesec {
+    width: 1000px;
+    background: linear-gradient(rgba(51, 8, 93, 1), rgba(135, 56, 187, 0.5)), url("https://www.cmsk12.org/cms/lib/NC50000755/Centricity/Domain/135/IMG_2334-cropped.jpg");
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    height: 400px;
+    background-position: center;
+}
+#title {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.text {
+    width: 1000px;
+    margin-top: 50px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#clubsec {
+    margin-top: 50px;
+    flex-direction: column;
+}
+.allclubs {
+    display: flex;
+}
+
+.header {
+    font-size: 35px;
+    color: var(--second);
+    font-weight: 700;
+    width: 1000px;
+}
+#clubtext {
+    width: 1000px;
+    margin-top: -20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.row {
+    display: flex;
+    margin-top: 0;
+    flex-direction: column;
+}
+#club {
+    margin-top: 50px;
+    width: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#clubname {
+    color: var(--second);
+    font-size: 25px;
+    font-weight: 700;
+}
+#clubdesc {
+    font-size: 13px;
+    margin-top: -15px;
+}
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#buttonlink, #buttonlink1 {
+    width: 75px;
+    height: 75px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0);/*change to .1*/
+    background-blend-mode: darken;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 100%;
+    transition: 0.1s;
+    pointer-events: none; /*remove*/
+}
+
+#buttonlink {
+    background: linear-gradient(rgba(195, 195, 195, 0.5), rgba(195, 195, 195, 0.5)), url(./icons/internet.png);
+    filter: opacity(60%);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#buttonlink1 {
+    background: linear-gradient(rgba(195, 195, 195, 0.5), rgba(195, 195, 195, 0.5)), url(./icons/video.png);
+    filter: opacity(60%);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#buttonlink:hover, #buttonlink1:hover {
+    transform: scale(1.1);
+}
