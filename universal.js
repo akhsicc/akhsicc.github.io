@@ -38,32 +38,32 @@ window.onload = function(){
 document.getElementById("menulink1").onmousedown = function(){
     document.getElementById("large").style = "width: 100%;";
     document.getElementById("imglarge").style = "opacity: 1;";
-    setTimeout(function(){ window.location.href = "./index.html"; }, 1000);
+    setTimeout(function(){ window.location.href = "./index.html"; }, 600);
 };
 
 document.getElementById("menulink2").onmousedown = function(){
     document.getElementById("large").style = "width: 100%;";
     document.getElementById("imglarge").style = "opacity: 1;";
-    setTimeout(function(){ window.location.href = "./clubs.html"; }, 1000);
+    setTimeout(function(){ window.location.href = "./clubs.html"; }, 600);
 };
 
 
 document.getElementById("menulink3").onmousedown = function(){
     document.getElementById("large").style = "width: 100%;";
     document.getElementById("imglarge").style = "opacity: 1;";
-    setTimeout(function(){ window.location.href = "./meetings-and-events.html"; }, 1000);
+    setTimeout(function(){ window.location.href = "./meetings-and-events.html"; }, 600);
 };
 
 document.getElementById("menulink4").onmousedown = function(){
     document.getElementById("large").style = "width: 100%;";
     document.getElementById("imglarge").style = "opacity: 1;";
-    setTimeout(function(){ window.location.href = "./guidelines.html"; }, 1000);
+    setTimeout(function(){ window.location.href = "./guidelines.html"; }, 600);
 };
 
 document.getElementById("menulink5").onmousedown = function(){
     document.getElementById("large").style = "width: 100%;";
     document.getElementById("imglarge").style = "opacity: 1;";
-    setTimeout(function(){ window.location.href = "./contact.html"; }, 1000);
+    setTimeout(function(){ window.location.href = "./contact.html"; }, 600);
 };
 
 

@@ -39,7 +39,7 @@ body {
 
 .header {
     font-size: 35px;
-    color: var(--second);
+    color: rgb(115, 152, 255);
     font-weight: 700;
     width: 1000px;
 }

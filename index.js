@@ -11,5 +11,5 @@ document.getElementById("link2").onmousedown = function(){
 document.getElementById("buttons").onmousedown = function(){
     document.getElementById("large").style = "width: 100%;";
     document.getElementById("imglarge").style = "opacity: 1;";
-    setTimeout(function(){ window.location.href = "./clubs.html"; }, 1000);
+    setTimeout(function(){ window.location.href = "./clubs.html"; }, 600);
 };
