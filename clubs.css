@@ -2,6 +2,29 @@ body {
     margin-top: 300px;
 }
 
+#backtop {
+    background: var(--main);
+    font-size: 17px;
+    position: fixed;
+    width: 70px;
+    height: 100px;
+    text-align: center;
+    bottom: 50px; right: 50px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    transition: 0.2s;
+}
+#toparrow {
+    transform: rotate(-90deg);
+    font-size: 60px;
+    margin-top: 5px;
+}
+#backtop:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
 #titlesec {
     width: 1000px;
     background: linear-gradient(rgba(51, 8, 93, 1), rgba(135, 56, 187, 0.5)), url("https://www.cmsk12.org/cms/lib/NC50000755/Centricity/Domain/135/IMG_2334-cropped.jpg");
@@ -29,7 +52,37 @@ body {
     text-align: center;
 }
 
-#clubsec {
+#scrolling {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.scrollbutton {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: var(--second);
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+.scrollbutton:hover {
+    background: var(--second);
+    color: white;
+    cursor: pointer;
+}
+
+#clubsec1, #clubsec2, #clubsec3, #clubsec4, #clubsec5, #clubsec6 {
     margin-top: 50px;
     flex-direction: column;
 }

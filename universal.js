@@ -7,8 +7,8 @@ if (width > 1024) {
         document.getElementById("tabs").style="margin-top: 0px;";
     }
     else {
-        document.getElementById("menu").style = "box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); padding-top: 0px; padding-bottom: 00px; height: 100px;";
-        document.getElementById("tabs").style="margin-top: -45px;";
+        document.getElementById("menu").style = "box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); padding-top: 0px; padding-bottom: 0px; height: 90px;";
+        document.getElementById("tabs").style="margin-top: 5px;";
         document.getElementById("username").style="font-size: 0;";
         
     }
@@ -35,6 +35,12 @@ window.onload = function(){
     document.getElementById("imglarge").style = "opacity: 0;";
 };
 
+document.getElementById("username").onmousedown = function(){
+    document.getElementById("large").style = "width: 100%;";
+    document.getElementById("imglarge").style = "opacity: 1;";
+    setTimeout(function(){ window.location.href = "./index.html"; }, 600);
+};
+
 document.getElementById("menulink1").onmousedown = function(){
     document.getElementById("large").style = "width: 100%;";
     document.getElementById("imglarge").style = "opacity: 1;";
@@ -47,12 +53,12 @@ document.getElementById("menulink2").onmousedown = function(){
     setTimeout(function(){ window.location.href = "./clubs.html"; }, 600);
 };
 
-
+/*
 document.getElementById("menulink3").onmousedown = function(){
     document.getElementById("large").style = "width: 100%;";
     document.getElementById("imglarge").style = "opacity: 1;";
     setTimeout(function(){ window.location.href = "./meetings-and-events.html"; }, 600);
-};
+};*/
 
 document.getElementById("menulink4").onmousedown = function(){
     document.getElementById("large").style = "width: 100%;";

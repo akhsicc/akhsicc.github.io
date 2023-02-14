@@ -110,6 +110,7 @@ body {
 
 #username:hover {
     color: var(--second);
+	cursor: pointer;
 }
 
 #menu-button {
