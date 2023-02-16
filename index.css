@@ -4,7 +4,7 @@ body {
 
 
 .gradientimage {
-    background: linear-gradient(rgba(51, 8, 93, .1), rgba(135, 56, 187, 0.1)), url("https://www.cmsk12.org/cms/lib/NC50000755/Centricity/Domain/135/Snapshot-cropped.jpg");
+    background: linear-gradient(rgba(51, 8, 93, .5), rgba(135, 56, 187, 0.1)), url("https://www.cmsk12.org/cms/lib/NC50000755/Centricity/Domain/135/Snapshot-cropped.jpg");
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
     background-size: cover;
     background-repeat: none;
@@ -136,3 +136,74 @@ body {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
     
 }
+
+@media only screen and (max-width: 1024px) {
+    .section, #sec1, #sec2, #sec3 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .sectioninfo {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text, #text1 {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 25px;
+    }
+    .header, #head1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    #gradientimage {
+        width: 90%;
+        height: 600px;
+    }
+
+    #sec2 {
+        margin-top: 100px;
+    }
+    .link, #link {
+        margin-top: 50px;
+        width: 500px;
+        height: 500px;
+    }
+    #icons {
+        width: 150px;
+        height: auto;
+    }
+    #iconstext {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    #buttons {
+        width: 500px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+    }
+    #sec3 {
+        height: 1000px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 90%;
+    }
+    #head2 {
+        font-size: 60px;
+        line-height: 75px;
+    }
+
+}
+

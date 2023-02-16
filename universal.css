@@ -36,9 +36,14 @@ body {
     background: gray;
 }
 
+#menuimage {
+	width: 50px;
+	margin-right: 20px;
+	transition: 0.2s;
+}
+
 #large {
     position: fixed; 
-    background-color: rgb(232, 232, 232);
     height: 115%;
 	margin-top: -400px;
     width: 100%;
@@ -48,10 +53,11 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: whitesmoke;
 }
 #imglarge {
 	width: 100px;
-	height: 130px;
+	height: auto;
 	object-fit: cover;
 	transition: 0.3s;
 
@@ -88,15 +94,10 @@ body {
 }
 
 #username {
-    margin-left: 40px;
-	margin-top: 5px;
 	font-size: 35px;
 	text-decoration: none;
 	color: whitesmoke;
 	transition: 0.2s;
-	display: inline-block;
-	border-bottom: 0px solid transparent;
-	border-width: 1px;
 	pointer-events: all;
 	font-weight: 700;
     letter-spacing: 2px;
@@ -160,4 +161,81 @@ body {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+	html,body{
+        overflow-x: hidden;
+    }
+	#imglarge {
+		width: 200px;
+		height: auto;
+		object-fit: cover;
+		transition: 0.3s;
+	
+	}
+    #menu {
+        height: 140px;
+        width: 100vw;
+        display: block;
+        transition: 0.3s;
+        overflow: hidden;
+        padding-top: 50px;
+		background: var(--main);
+    }
+    #menucontent {
+        display: flex;
+    }
+	#menuimage {
+		width: 80px;
+		margin-right: 40px;
+	}
+    #menubutton {
+		background: transparent;
+		color: white;
+		font-size: 100px;
+		transform: rotate(90deg);
+		display:block;
+		font-weight: 700;
+        filter: opacity(100%);
+        width: 150px;
+        height: 150px;
+        margin-left: 35vw;
+        cursor: pointer;
+        border: none;
+        outline: none;
+		transition: 0.2s;
+    }
+
+    #username {
+        font-size: 60px;
+        padding-left: 0px;
+    }
+    #tabs {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;		
+		margin-top: 70%;
+    }
+	.menu-link {
+		font-size: 70px;
+		bottom: 0;
+		width: 80%;
+		text-align: right;
+		border-radius: 20px;
+		margin-top: 0;
+		margin-bottom: 0;
+		text-transform: uppercase;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 50px;
+		letter-spacing: 0px;
+	}
+	.menu-link:hover {
+		background: white;
+		text-decoration: none;
+		color: var(--second);
+	}
+
 }

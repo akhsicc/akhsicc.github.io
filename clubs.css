@@ -14,6 +14,7 @@ body {
     color: white;
     font-weight: 600;
     transition: 0.2s;
+    z-index: 1000;
 }
 #toparrow {
     transform: rotate(-90deg);
@@ -167,4 +168,87 @@ body {
 
 #buttonlink:hover, #buttonlink1:hover {
     transform: scale(1.1);
+}
+
+
+@media only screen and (max-width: 1024px) {
+    #titlesec {
+        width: 90%;
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #title {
+        font-size: 70px;
+        width: 100%;
+        text-align: center;
+    }
+    .section {
+        width: 90%;
+    }
+    .text {
+        font-size: 20px;
+    }
+    #scrolling {
+        flex-direction: column;
+        width: 90%;
+        height: 1200px;
+    }
+    .scrollbutton {
+        font-size: 35px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 10px;
+    }
+
+    #backtop {
+        width: 150px;
+        height: 200px;
+    }
+    #toparrow {
+        font-size: 100px;
+        margin-top: 20px;
+    }
+
+    #clubsec1, #clubsec2, #clubsec3, #clubsec4, #clubsec5, #clubsec6 {
+        width: 90%;
+    }
+    .allclubs {
+        flex-direction: column;
+    }
+    .header {
+        text-align: center;
+        font-size: 70px;
+    }
+    #clubtext {
+        font-size: 30px;
+        text-align: center;
+        width: 90%;
+    }
+    #club {
+        width: 80%;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    #clubname {
+        font-size: 50px;
+    }
+    #clubdesc {
+        font-size: 20px;
+    }
+    #advisor {
+        font-size: 20px;
+    }
+    #buttonlink, #buttonlink1 {
+        width: 200px;
+        height: 200px;
+        background-size: 70% 70%;
+        display: none;
+    }
+
 }
