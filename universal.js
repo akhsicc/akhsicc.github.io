@@ -55,11 +55,13 @@ function wait(ms){
    }
  }
 
+var animateSpeed = 400;
+
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }
 window.onload = function(){
-    wait(200);
+    wait(animateSpeed);
     document.getElementById("large").style = "width: 0;"
     document.getElementById("imglarge").style = "opacity: 0;";
 };
@@ -67,38 +69,38 @@ window.onload = function(){
 document.getElementById("username").onmousedown = function(){
     document.getElementById("large").style = "width: 100%;";
     document.getElementById("imglarge").style = "opacity: 1;";
-    setTimeout(function(){ window.location.href = "./index.html"; }, 600);
+    setTimeout(function(){ window.location.href = "./index.html"; }, animateSpeed);
 };
 
 document.getElementById("menulink1").onmousedown = function(){
     document.getElementById("large").style = "width: 100%;";
     document.getElementById("imglarge").style = "opacity: 1;";
-    setTimeout(function(){ window.location.href = "./index.html"; }, 600);
+    setTimeout(function(){ window.location.href = "./index.html"; }, animateSpeed);
 };
 
 document.getElementById("menulink2").onmousedown = function(){
     document.getElementById("large").style = "width: 100%;";
     document.getElementById("imglarge").style = "opacity: 1;";
-    setTimeout(function(){ window.location.href = "./clubs.html"; }, 600);
+    setTimeout(function(){ window.location.href = "./clubs.html"; }, animateSpeed);
 };
 
 /*
 document.getElementById("menulink3").onmousedown = function(){
     document.getElementById("large").style = "width: 100%;";
     document.getElementById("imglarge").style = "opacity: 1;";
-    setTimeout(function(){ window.location.href = "./meetings-and-events.html"; }, 600);
+    setTimeout(function(){ window.location.href = "./meetings-and-events.html"; }, animateSpeed);
 };*/
 
 document.getElementById("menulink4").onmousedown = function(){
     document.getElementById("large").style = "width: 100%;";
     document.getElementById("imglarge").style = "opacity: 1;";
-    setTimeout(function(){ window.location.href = "./guidelines.html"; }, 600);
+    setTimeout(function(){ window.location.href = "./guidelines.html"; }, animateSpeed);
 };
 
 document.getElementById("menulink5").onmousedown = function(){
     document.getElementById("large").style = "width: 100%;";
     document.getElementById("imglarge").style = "opacity: 1;";
-    setTimeout(function(){ window.location.href = "./contact.html"; }, 600);
+    setTimeout(function(){ window.location.href = "./contact.html"; }, animateSpeed);
 };
 
 

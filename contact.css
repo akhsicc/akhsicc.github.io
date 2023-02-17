@@ -14,7 +14,8 @@ body {
     margin-right: auto;
     align-items: center;
     height: 400px;
-    background-position: center;
+    background-size: cover;
+    background-position: right;
 }
 
 #title {
