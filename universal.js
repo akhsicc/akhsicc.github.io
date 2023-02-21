@@ -103,4 +103,10 @@ document.getElementById("menulink5").onmousedown = function(){
     setTimeout(function(){ window.location.href = "./contact.html"; }, animateSpeed);
 };
 
+document.getElementById("menuimage").onmousedown = function(){
+    document.getElementById("large").style = "width: 100%;";
+    document.getElementById("imglarge").style = "opacity: 1;";
+    setTimeout(function(){ window.location.href = "./index.html"; }, animateSpeed);
+};
+
 

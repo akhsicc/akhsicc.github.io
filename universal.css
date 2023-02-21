@@ -13,8 +13,10 @@ html, body {
 }
 
 :root {
-    --main: #3d2566;
-    --second: #9a6fff;
+    --main: #663399;
+    --second: #553eaf;
+	--third: #b7b7b7;
+	--fourth: #003c71;
 }
 
 body {
@@ -40,6 +42,11 @@ body {
 	width: 50px;
 	margin-right: 20px;
 	transition: 0.2s;
+	-webkit-user-drag: none;
+}
+#menuimage:hover {
+	cursor: pointer;
+	transform: scale(1.1);
 }
 
 #large {
@@ -110,7 +117,7 @@ body {
 }
 
 #username:hover {
-    color: var(--second);
+    color: var(--third);
 	cursor: pointer;
 }
 
@@ -132,6 +139,7 @@ body {
 }
 .menu-link {
 	margin-left: 20px;
+	margin-right: 20px;
 	margin-top: 5px;
 	font-size: 18px;
 	text-decoration: none;
@@ -145,8 +153,8 @@ body {
 }
 
 .menu-link:hover {
-	color: var(--second);
-	border-bottom: 2px solid var(--second);
+	color: var(--third);
+	border-bottom: 2px solid var(--third);
 	cursor: pointer;
 }
 

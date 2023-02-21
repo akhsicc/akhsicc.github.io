@@ -28,7 +28,7 @@ body {
 
 .header {
     font-size: 35px;
-    color: var(--main);
+    color: var(--fourth);
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
@@ -39,6 +39,10 @@ body {
     flex-direction: column;
     width: 1000px;
     text-align: left;
+}
+
+#sec1 {
+    margin-bottom: 50px;
 }
 .text {
     font-size: 16px;
@@ -58,6 +62,7 @@ body {
 }
 #t2 {
     font-weight: normal;
+    margin-top: -20px;
 }
 
 @media only screen and (max-width: 1024px) {
