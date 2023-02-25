@@ -137,6 +137,19 @@ body {
     
 }
 
+#head4 {
+    font-size: 20px;
+    color: var(--fourth);
+    margin-top: 100px;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+}
+#head4:hover {
+    border-bottom: 3px solid var(--fourth);
+}
+
 @media only screen and (max-width: 1024px) {
     .section, #sec1, #sec2, #sec3 {
         width: 100%;
@@ -203,6 +216,10 @@ body {
     #head2 {
         font-size: 60px;
         line-height: 75px;
+    }
+    #head4 {
+        font-size: 35px;
+        width: 90%;
     }
 
 }
