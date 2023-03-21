@@ -42,12 +42,14 @@ body {
 }
 
 #sec1 {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .text {
     font-size: 16px;
     margin-bottom: 50px;
     margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
