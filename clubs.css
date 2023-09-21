@@ -157,13 +157,13 @@ body {
 
 #buttonlink {
     background: linear-gradient(rgba(195, 195, 195, 0.5), rgba(195, 195, 195, 0.5)), url(./icons/internet.png);
-    filter: opacity(60%);
+    filter: opacity(40%);
     background-repeat: no-repeat;
     background-position: center;
 }
 #buttonlink1 {
     background: linear-gradient(rgba(195, 195, 195, 0.5), rgba(195, 195, 195, 0.5)), url(./icons/video.png);
-    filter: opacity(60%);
+    filter: opacity(40%);
     background-repeat: no-repeat;
     background-position: center;
 
@@ -248,10 +248,11 @@ body {
         font-size: 20px;
     }
     #buttonlink, #buttonlink1 {
-        width: 200px;
-        height: 200px;
+        transform: scale(2.5);
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
         background-size: 70% 70%;
-        display: none;
     }
 
 }
