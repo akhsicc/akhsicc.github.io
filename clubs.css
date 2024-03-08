@@ -143,7 +143,7 @@ body {
     margin-top: 40px;
 }
 
-#buttonlink, #buttonlink1 {
+#buttonlink, #buttonlink1, #buttonlink-enabled, #buttonlink1-enabled {
     width: 75px;
     height: 75px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0);/*change to .1*/
@@ -155,21 +155,34 @@ body {
     pointer-events: none; /*remove*/
 }
 
-#buttonlink {
+#buttonlink, #buttonlink-enabled {
     background: linear-gradient(rgba(195, 195, 195, 0.5), rgba(195, 195, 195, 0.5)), url(./icons/internet.png);
     filter: opacity(40%);
     background-repeat: no-repeat;
     background-position: center;
 }
-#buttonlink1 {
+#buttonlink-enabled {
+    pointer-events: all; 
+    background: linear-gradient(rgba(195, 195, 195, 0.25), rgba(195, 195, 195, 0.25)), url(./icons/internet.png); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    filter: opacity(80%);
+}
+#buttonlink1, #buttonlink1-enabled {
     background: linear-gradient(rgba(195, 195, 195, 0.5), rgba(195, 195, 195, 0.5)), url(./icons/video.png);
     filter: opacity(40%);
     background-repeat: no-repeat;
     background-position: center;
-
+}
+#buttonlink1-enabled {
+    pointer-events: all; 
+    background: linear-gradient(rgba(195, 195, 195, 0.25), rgba(195, 195, 195, 0.25)), url(./icons/internet.png); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    filter: opacity(80%);
 }
 
-#buttonlink:hover, #buttonlink1:hover {
+#buttonlink:hover, #buttonlink-enabled:hover, #buttonlink1:hover, #buttonlink1-enabled:hover {
     transform: scale(1.1);
 }
 
