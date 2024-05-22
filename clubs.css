@@ -176,7 +176,7 @@ body {
 }
 #buttonlink1-enabled {
     pointer-events: all; 
-    background: linear-gradient(rgba(195, 195, 195, 0.25), rgba(195, 195, 195, 0.25)), url(./icons/internet.png); 
+    background: linear-gradient(rgba(195, 195, 195, 0.25), rgba(195, 195, 195, 0.25)), url(./icons/video.png); 
     background-repeat: no-repeat; 
     background-position: center; 
     filter: opacity(80%);
