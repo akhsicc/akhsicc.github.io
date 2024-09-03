@@ -9,18 +9,21 @@ body {
     width: 70px;
     height: 100px;
     text-align: center;
-    bottom: 50px; right: 50px;
+    bottom: 50px;
+    right: 50px;
     border-radius: 20px;
     color: white;
     font-weight: 600;
     transition: 0.4s;
     z-index: 1000;
 }
+
 #toparrow {
     transform: rotate(-90deg);
     font-size: 60px;
     margin-top: 5px;
 }
+
 #backtop:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
     cursor: pointer;
@@ -39,6 +42,7 @@ body {
     height: 400px;
     background-position: center;
 }
+
 #title {
     font-size: 40px;
     font-weight: 700;
@@ -46,6 +50,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 .text {
     width: 1000px;
     margin-top: 50px;
@@ -65,6 +70,7 @@ body {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
 }
+
 .scrollbutton {
     margin-left: 5px;
     margin-right: 5px;
@@ -77,19 +83,27 @@ body {
     border-radius: 20px;
     transition: 0.2s;
 }
+
 .scrollbutton:hover {
     color: var(--second);
     background: whitesmoke;
     cursor: pointer;
 }
 
-#clubsec1, #clubsec2, #clubsec3, #clubsec4, #clubsec5, #clubsec6 {
+#clubsec1,
+#clubsec2,
+#clubsec3,
+#clubsec4,
+#clubsec5,
+#clubsec6 {
     margin-top: 50px;
     flex-direction: column;
 }
+
 #clubsec1 {
     margin-top: 100px;
 }
+
 .allclubs {
     display: flex;
 }
@@ -100,6 +114,7 @@ body {
     font-weight: 700;
     width: 1000px;
 }
+
 #clubtext {
     width: 1000px;
     margin-top: -20px;
@@ -113,6 +128,7 @@ body {
     margin-top: 0;
     flex-direction: column;
 }
+
 #club {
     margin-top: 50px;
     width: 300px;
@@ -127,15 +143,18 @@ body {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
 #clubname {
     color: var(--second);
     font-size: 25px;
     font-weight: 700;
 }
+
 #clubdesc {
     font-size: 13px;
     margin-top: -15px;
 }
+
 #buttons {
     display: flex;
     justify-content: center;
@@ -143,49 +162,90 @@ body {
     margin-top: 40px;
 }
 
-#buttonlink, #buttonlink1, #buttonlink-enabled, #buttonlink1-enabled {
+#buttonlink,
+#buttonlink1,
+#buttonlink-enabled,
+#buttonlink1-enabled {
     width: 75px;
     height: 75px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0);/*change to .1*/
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0);
+    /*change to .1*/
     background-blend-mode: darken;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 100%;
     transition: 0.1s;
-    pointer-events: none; /*remove*/
+    pointer-events: none;
+    /*remove*/
 }
 
-#buttonlink, #buttonlink-enabled {
+#buttonlink,
+#buttonlink-enabled {
     background: linear-gradient(rgba(195, 195, 195, 0.5), rgba(195, 195, 195, 0.5)), url(./icons/internet.png);
     filter: opacity(40%);
     background-repeat: no-repeat;
     background-position: center;
 }
+
 #buttonlink-enabled {
-    pointer-events: all; 
-    background: linear-gradient(rgba(195, 195, 195, 0.25), rgba(195, 195, 195, 0.25)), url(./icons/internet.png); 
-    background-repeat: no-repeat; 
-    background-position: center; 
+    pointer-events: all;
+    background: linear-gradient(rgba(195, 195, 195, 0.25), rgba(195, 195, 195, 0.25)), url(./icons/internet.png);
+    background-repeat: no-repeat;
+    background-position: center;
     filter: opacity(80%);
 }
-#buttonlink1, #buttonlink1-enabled {
+
+#buttonlink1,
+#buttonlink1-enabled {
     background: linear-gradient(rgba(195, 195, 195, 0.5), rgba(195, 195, 195, 0.5)), url(./icons/video.png);
     filter: opacity(40%);
     background-repeat: no-repeat;
     background-position: center;
 }
+
 #buttonlink1-enabled {
-    pointer-events: all; 
-    background: linear-gradient(rgba(195, 195, 195, 0.25), rgba(195, 195, 195, 0.25)), url(./icons/video.png); 
-    background-repeat: no-repeat; 
-    background-position: center; 
+    pointer-events: all;
+    background: linear-gradient(rgba(195, 195, 195, 0.25), rgba(195, 195, 195, 0.25)), url(./icons/video.png);
+    background-repeat: no-repeat;
+    background-position: center;
     filter: opacity(80%);
 }
 
-#buttonlink:hover, #buttonlink-enabled:hover, #buttonlink1:hover, #buttonlink1-enabled:hover {
+#buttonlink:hover,
+#buttonlink-enabled:hover,
+#buttonlink1:hover,
+#buttonlink1-enabled:hover {
     transform: scale(1.1);
 }
 
+.linkbutton {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: #003C71;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .linkbutton {
+        scale: 210%;
+        margin: 50px;
+    }
+    
+}
+
+.linkbutton:hover {
+    scale: 110%;
+    transition: ease 0.2s;
+}
 
 @media only screen and (max-width: 1024px) {
     #titlesec {
@@ -195,22 +255,27 @@ body {
         justify-content: center;
         align-items: center;
     }
+
     #title {
         font-size: 70px;
         width: 100%;
         text-align: center;
     }
+
     .section {
         width: 90%;
     }
+
     .text {
         font-size: 20px;
     }
+
     #scrolling {
         flex-direction: column;
         width: 90%;
         height: 1200px;
     }
+
     .scrollbutton {
         font-size: 35px;
         padding-top: 40px;
@@ -224,26 +289,36 @@ body {
         width: 150px;
         height: 200px;
     }
+
     #toparrow {
         font-size: 100px;
         margin-top: 20px;
     }
 
-    #clubsec1, #clubsec2, #clubsec3, #clubsec4, #clubsec5, #clubsec6 {
+    #clubsec1,
+    #clubsec2,
+    #clubsec3,
+    #clubsec4,
+    #clubsec5,
+    #clubsec6 {
         width: 90%;
     }
+
     .allclubs {
         flex-direction: column;
     }
+
     .header {
         text-align: center;
         font-size: 70px;
     }
+
     #clubtext {
         font-size: 30px;
         text-align: center;
         width: 90%;
     }
+
     #club {
         width: 80%;
         padding-left: 50px;
@@ -251,16 +326,21 @@ body {
         padding-top: 100px;
         padding-bottom: 100px;
     }
+
     #clubname {
         font-size: 50px;
     }
+
     #clubdesc {
         font-size: 20px;
     }
+
     #advisor {
         font-size: 20px;
     }
-    #buttonlink, #buttonlink1 {
+
+    #buttonlink,
+    #buttonlink1 {
         transform: scale(2.5);
         margin-top: 50px;
         margin-left: 50px;
