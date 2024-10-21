@@ -5,7 +5,7 @@ document.getElementById("link1").onmousedown = function(){
     window.open("https://docs.google.com/document/d/1D0n3Iboh2PKLEOdSxRaiixyuttUZSzVmfqHyK1PBUAs/edit?usp=sharing", "_blank");
 };
 document.getElementById("link2").onmousedown = function(){
-    //window.open("https://forms.gle/V1Lqep6i7Vf8i7Ta7", "_blank");
+    window.open("https://www.signupgenius.com/go/10C0E4EA4A92FA6F8C34-52426827-fall#/", "_blank");
 };
 
 document.getElementById("buttons").onmousedown = function(){
