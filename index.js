@@ -5,7 +5,7 @@ document.getElementById("link1").onmousedown = function(){
     window.open("https://docs.google.com/document/d/1448bY-W-eDId6RfV6zeMQvsLQB0UgdD4BO0nibjn8NQ/edit", "_blank");
 };
 document.getElementById("link2").onmousedown = function(){
-    //window.open("https://www.signupgenius.com/go/10C0E4EA4A92FA6F8C34-52426827-fall#/", "_blank");
+    window.open("https://www.signupgenius.com/go/10C0E4EA4A92FA6F8C34-55260845-iccspring", "_blank");
 };
 
 document.getElementById("buttons").onmousedown = function(){
